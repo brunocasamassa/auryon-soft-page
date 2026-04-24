@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bruno Casamassa — Android Engineer & AppBlocker</title>
+  <meta name="description" content="Bruno Casamassa — Android Engineer. Creator of AppBlockerService, a focus-first app blocker for Android." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=JetBrains+Mono:wght@300;400;500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90' fill='%2300ff9d'%3E▲%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <div class="loader-count" data-count>00</div>
+      <div class="loader-text" data-i18n="loader.text">INITIALIZING</div>
+    </div>
+  </div>
+
+  <!-- WebGL background canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Noise overlay -->
+  <div class="noise"></div>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursor-dot"></div>
+
+  <!-- Header -->
+  <header class="header">
+    <a href="#home" class="logo" data-cursor="link">
+      <span class="logo-mark">▲</span>
+      <span class="logo-text">CASAMASSA</span>
+    </a>
+    <nav class="nav">
+      <a href="#product" data-cursor="link" data-i18n="nav.product">Product</a>
+      <a href="#portfolio" data-cursor="link" data-i18n="nav.portfolio">Portfolio</a>
+      <a href="#about" data-cursor="link" data-i18n="nav.about">About</a>
+      <a href="#contact" data-cursor="link" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <div class="header-controls">
+      <button class="lang-toggle" id="lang-toggle" data-cursor="link">
+        <span class="lang-pt active">PT</span>
+        <span class="lang-sep">/</span>
+        <span class="lang-en">EN</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO / HOME -->
+    <section class="hero" id="home">
+      <div class="hero-grid">
+        <div class="hero-meta">
+          <span class="hero-meta-line">● <span data-i18n="hero.status">AVAILABLE FOR WORK</span></span>
+          <span class="hero-meta-line" data-i18n="hero.location">SÃO PAULO, BR · GMT-3</span>
+        </div>
+
+        <h1 class="hero-title" data-split>
+          <span class="line"><span class="word">Android</span></span>
+          <span class="line"><span class="word hero-italic">Engineer</span></span>
+          <span class="line"><span class="word">&amp;</span> <span class="word">Maker</span></span>
+          <span class="line"><span class="word hero-accent">of</span> <span class="word hero-accent">focus.</span></span>
+        </h1>
+
+        <p class="hero-sub" data-i18n="hero.sub">
+          Eight years building mobile products for Banco Santander, Domino's,
+          Carrefour and BRP. Now shipping my own — AppBlockerService — a
+          minimal focus tool that helps you reclaim hours from the apps
+          that steal them.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#product" class="btn btn-primary" data-cursor="link">
+            <span data-i18n="hero.cta1">Meet AppBlocker</span>
+            <svg viewBox="0 0 24 24" width="18" height="18"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#portfolio" class="btn btn-ghost" data-cursor="link" data-i18n="hero.cta2">See portfolio</a>
+        </div>
+
+        <div class="hero-ticker" aria-hidden="true">
+          <div class="ticker-track">
+            <span>KOTLIN</span><span>●</span>
+            <span>JETPACK COMPOSE</span><span>●</span>
+            <span>COROUTINES</span><span>●</span>
+            <span>HILT</span><span>●</span>
+            <span>ROOM</span><span>●</span>
+            <span>RETROFIT</span><span>●</span>
+            <span>MVVM</span><span>●</span>
+            <span>ANDROID SDK</span><span>●</span>
+            <span>KOTLIN</span><span>●</span>
+            <span>JETPACK COMPOSE</span><span>●</span>
+            <span>COROUTINES</span><span>●</span>
+            <span>HILT</span><span>●</span>
+            <span>ROOM</span><span>●</span>
+            <span>RETROFIT</span><span>●</span>
+            <span>MVVM</span><span>●</span>
+            <span>ANDROID SDK</span><span>●</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCT -->
+    <section class="product" id="product">
+      <div class="section-head">
+        <span class="section-num">01</span>
+        <span class="section-label" data-i18n="product.label">PRODUCT</span>
+      </div>
+
+      <div class="product-intro">
+        <h2 class="section-title" data-split>
+          <span class="line"><span class="word">AppBlocker</span><span class="word hero-italic">Service</span></span>
+        </h2>
+        <p class="product-tag" data-i18n="product.tag">
+          An Android focus tool that blocks distracting apps by time, schedule
+          and usage limits. Built for people who want their day back.
+        </p>
+      </div>
+
+      <!-- Phone mockup + features -->
+      <div class="product-showcase">
+        <div class="phone-wrap" data-cursor="media">
+          <div class="phone">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <div class="phone-status">
+                <span class="phone-time">22:47</span>
+                <span class="phone-icons">●●●</span>
+              </div>
+              <div class="phone-content">
+                <div class="phone-header">
+                  <div class="phone-title">AppBlocker</div>
+                  <div class="phone-sub" data-i18n="phone.focus">Focus mode · Active</div>
+                </div>
+
+                <div class="phone-timer">
+                  <svg viewBox="0 0 200 200" class="timer-svg">
+                    <circle cx="100" cy="100" r="88" class="timer-bg"/>
+                    <circle cx="100" cy="100" r="88" class="timer-fg" id="timer-fg"/>
+                  </svg>
+                  <div class="timer-text">
+                    <div class="timer-num" id="timer-num">47:32</div>
+                    <div class="timer-label" data-i18n="phone.remaining">remaining</div>
+                  </div>
+                </div>
+
+                <div class="phone-apps">
+                  <div class="phone-app blocked"><span class="dot"></span>Instagram<span class="status" data-i18n="phone.blocked">BLOCKED</span></div>
+                  <div class="phone-app blocked"><span class="dot"></span>TikTok<span class="status" data-i18n="phone.blocked">BLOCKED</span></div>
+                  <div class="phone-app blocked"><span class="dot"></span>Twitter/X<span class="status" data-i18n="phone.blocked">BLOCKED</span></div>
+                  <div class="phone-app allowed"><span class="dot"></span>Spotify<span class="status" data-i18n="phone.allowed">ALLOWED</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="phone-glow"></div>
+        </div>
+
+        <div class="features">
+          <article class="feature" data-reveal>
+            <div class="feature-num">F/01</div>
+            <h3 class="feature-title" data-i18n="f1.title">Schedule-based blocking</h3>
+            <p class="feature-desc" data-i18n="f1.desc">
+              Create windows of deep work. AppBlocker enforces them — no
+              willpower required. Block by weekday, hour, or custom rule.
+            </p>
+          </article>
+
+          <article class="feature" data-reveal>
+            <div class="feature-num">F/02</div>
+            <h3 class="feature-title" data-i18n="f2.title">Usage limits</h3>
+            <p class="feature-desc" data-i18n="f2.desc">
+              Set a daily budget per app. Instagram gets 20 minutes and then
+              it's locked. Your screen time, your rules.
+            </p>
+          </article>
+
+          <article class="feature" data-reveal>
+            <div class="feature-num">F/03</div>
+            <h3 class="feature-title" data-i18n="f3.title">Focus sessions</h3>
+            <p class="feature-desc" data-i18n="f3.desc">
+              One tap starts a focus session. Selected apps are blocked until
+              the timer ends — no overrides, no bargaining.
+            </p>
+          </article>
+
+          <article class="feature" data-reveal>
+            <div class="feature-num">F/04</div>
+            <h3 class="feature-title" data-i18n="f4.title">100% on-device</h3>
+            <p class="feature-desc" data-i18n="f4.desc">
+              No cloud, no tracking, no ads. Uses Android's Accessibility
+              Service and UsageStats APIs. Your data never leaves your phone.
+            </p>
+          </article>
+        </div>
+      </div>
+
+      <!-- Tech stack strip -->
+      <div class="tech-strip">
+        <div class="tech-strip-head" data-i18n="tech.head">BUILT WITH</div>
+        <div class="tech-strip-items">
+          <span class="tech-chip">Kotlin</span>
+          <span class="tech-chip">Jetpack Compose</span>
+          <span class="tech-chip">Coroutines</span>
+          <span class="tech-chip">Hilt</span>
+          <span class="tech-chip">Room</span>
+          <span class="tech-chip">AccessibilityService</span>
+          <span class="tech-chip">UsageStatsManager</span>
+          <span class="tech-chip">Material 3</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section class="portfolio" id="portfolio">
+      <div class="section-head">
+        <span class="section-num">02</span>
+        <span class="section-label" data-i18n="portfolio.label">PORTFOLIO</span>
+      </div>
+
+      <h2 class="section-title portfolio-title" data-split>
+        <span class="line"><span class="word">Selected</span> <span class="word hero-italic">work</span></span>
+      </h2>
+
+      <div class="projects">
+        <a class="project" href="#" data-cursor="link" data-reveal>
+          <div class="project-index">01</div>
+          <div class="project-main">
+            <h3 class="project-name">AppBlockerService</h3>
+            <p class="project-role" data-i18n="p1.role">Solo · Design &amp; Dev · Android / Kotlin</p>
+          </div>
+          <div class="project-year">2025</div>
+          <div class="project-arrow">→</div>
+        </a>
+
+        <a class="project" href="https://brp.com" target="_blank" rel="noopener" data-cursor="link" data-reveal>
+          <div class="project-index">02</div>
+          <div class="project-main">
+            <h3 class="project-name">BRP Connect</h3>
+            <p class="project-role" data-i18n="p2.role">Android Engineer · Vehicle connectivity platform</p>
+          </div>
+          <div class="project-year">2024</div>
+          <div class="project-arrow">→</div>
+        </a>
+
+        <a class="project" href="#" data-cursor="link" data-reveal>
+          <div class="project-index">03</div>
+          <div class="project-main">
+            <h3 class="project-name">Domino's US</h3>
+            <p class="project-role" data-i18n="p3.role">Android Engineer · Ordering flow &amp; loyalty</p>
+          </div>
+          <div class="project-year">2022</div>
+          <div class="project-arrow">→</div>
+        </a>
+
+        <a class="project" href="#" data-cursor="link" data-reveal>
+          <div class="project-index">04</div>
+          <div class="project-main">
+            <h3 class="project-name">Carrefour / ITLean</h3>
+            <p class="project-role" data-i18n="p4.role">Android Engineer · Retail internal tooling</p>
+          </div>
+          <div class="project-year">2021</div>
+          <div class="project-arrow">→</div>
+        </a>
+
+        <a class="project" href="#" data-cursor="link" data-reveal>
+          <div class="project-index">05</div>
+          <div class="project-main">
+            <h3 class="project-name">Valid</h3>
+            <p class="project-role" data-i18n="p5.role">Android Engineer · Secure identity apps</p>
+          </div>
+          <div class="project-year">2020</div>
+          <div class="project-arrow">→</div>
+        </a>
+
+        <a class="project" href="#" data-cursor="link" data-reveal>
+          <div class="project-index">06</div>
+          <div class="project-main">
+            <h3 class="project-name">Banco Santander / Everis</h3>
+            <p class="project-role" data-i18n="p6.role">Android Engineer · Banking platform</p>
+          </div>
+          <div class="project-year">2019</div>
+          <div class="project-arrow">→</div>
+        </a>
+
+        <a class="project" href="#" data-cursor="link" data-reveal>
+          <div class="project-index">07</div>
+          <div class="project-main">
+            <h3 class="project-name">Opt2flow</h3>
+            <p class="project-role" data-i18n="p7.role">Android Engineer · Workflow automation</p>
+          </div>
+          <div class="project-year">2018</div>
+          <div class="project-arrow">→</div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="section-head">
+        <span class="section-num">03</span>
+        <span class="section-label" data-i18n="about.label">ABOUT</span>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 class="section-title" data-split>
+            <span class="line"><span class="word">Curious,</span></span>
+            <span class="line"><span class="word hero-italic">persistent,</span></span>
+            <span class="line"><span class="word">always shipping.</span></span>
+          </h2>
+          <p data-i18n="about.p1">
+            I'm an Android Engineer based in São Paulo. For almost a decade
+            I've built mobile products used by millions — from banking and
+            retail to automotive and food delivery.
+          </p>
+          <p data-i18n="about.p2">
+            AppBlockerService is my own take on a tool I wanted to exist:
+            something honest, fast, and respectful of your attention. No
+            subscriptions disguised as freemium, no telemetry.
+          </p>
+          <p data-i18n="about.p3">
+            Outside work I play simulation games, research obscure consumer
+            electronics, and keep a running list of side projects I'll
+            probably ship someday.
+          </p>
+        </div>
+
+        <aside class="about-side">
+          <div class="about-block">
+            <div class="about-block-head" data-i18n="about.stack">STACK</div>
+            <ul>
+              <li>Kotlin · Java</li>
+              <li>Jetpack Compose</li>
+              <li>Coroutines · Flow</li>
+              <li>Hilt / Dagger</li>
+              <li>Room · Retrofit</li>
+              <li>MVVM · Clean Arch.</li>
+              <li>Android SDK / NDK</li>
+            </ul>
+          </div>
+
+          <div class="about-block">
+            <div class="about-block-head" data-i18n="about.exp">EXPERIENCE</div>
+            <ul>
+              <li>BRP <span>2023 — <span data-i18n="about.now">now</span></span></li>
+              <li>Domino's US <span>2022</span></li>
+              <li>Carrefour <span>2021</span></li>
+              <li>Valid <span>2020</span></li>
+              <li>Santander <span>2019</span></li>
+              <li>Opt2flow <span>2018</span></li>
+            </ul>
+          </div>
+
+          <div class="about-block">
+            <div class="about-block-head" data-i18n="about.now2">NOW</div>
+            <ul>
+              <li data-i18n="about.now.l1">Shipping AppBlockerService</li>
+              <li data-i18n="about.now.l2">Open to new roles</li>
+              <li data-i18n="about.now.l3">Writing more Kotlin, less YAML</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="section-head">
+        <span class="section-num">04</span>
+        <span class="section-label" data-i18n="contact.label">CONTACT</span>
+      </div>
+
+      <h2 class="contact-title" data-split>
+        <span class="line"><span class="word" data-i18n="contact.l1">Let's build</span></span>
+        <span class="line"><span class="word hero-italic" data-i18n="contact.l2">something</span> <span class="word" data-i18n="contact.l3">focused.</span></span>
+      </h2>
+
+      <div class="contact-grid">
+        <a href="mailto:brunocasamassa@gmail.com" class="contact-link" data-cursor="link">
+          <span class="contact-key" data-i18n="contact.email">Email</span>
+          <span class="contact-val">brunocasamassa@gmail.com</span>
+        </a>
+        <a href="https://www.linkedin.com/in/bruno-casamassa-bb109010a/" target="_blank" rel="noopener" class="contact-link" data-cursor="link">
+          <span class="contact-key">LinkedIn</span>
+          <span class="contact-val">/in/bruno-casamassa</span>
+        </a>
+        <a href="https://github.com/brunocasamassa" target="_blank" rel="noopener" class="contact-link" data-cursor="link">
+          <span class="contact-key">GitHub</span>
+          <span class="contact-val">@brunocasamassa</span>
+        </a>
+        <a href="https://twitter.com/4ury0n" target="_blank" rel="noopener" class="contact-link" data-cursor="link">
+          <span class="contact-key">X / Twitter</span>
+          <span class="contact-val">@4ury0n</span>
+        </a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-row">
+        <span>© 2026 Bruno Casamassa</span>
+        <span class="footer-time" id="footer-time">SP · 00:00</span>
+        <span data-i18n="footer.built">Built with three.js, gsap &amp; coffee</span>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- App -->
+  <script src="js/i18n.js"></script>
+  <script src="js/webgl.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
