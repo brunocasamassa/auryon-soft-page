@@ -872,3 +872,75 @@ section {
   animation: glitch-1 0.4s steps(3) 1;
   color: var(--accent);
 }
+
+/* ==========================================================================
+   Legal — privacy policy & terms page
+   ========================================================================== */
+.legal {
+  position: relative;
+  z-index: 2;
+  padding: 10rem var(--gutter) 4rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.legal-title {
+  font-size: clamp(2.6rem, 7vw, 5.5rem);
+}
+.legal-body {
+  max-width: 720px;
+}
+.legal-body p {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: var(--fg-dim);
+  margin-bottom: 1.5rem;
+}
+.legal-subtitle {
+  font-family: var(--font-display);
+  font-weight: 300;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  margin: 4rem 0 1.5rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--border);
+}
+.legal-list {
+  list-style: none;
+  margin: 0 0 1.5rem;
+}
+.legal-list li {
+  position: relative;
+  padding: 1.25rem 0 1.25rem 3rem;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: var(--fg-dim);
+  border-top: 1px solid var(--border);
+}
+.legal-list li:last-child {
+  border-bottom: 1px solid var(--border);
+}
+.legal-list-mark {
+  position: absolute;
+  left: 0;
+  top: 1.35rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  color: var(--accent);
+}
+.legal-list-mark::after {
+  content: '/';
+  color: var(--fg-faint);
+  margin-left: 0.35rem;
+}
+.legal-effective {
+  margin-top: 3rem;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid var(--border-strong);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--fg);
+}

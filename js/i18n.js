@@ -9,6 +9,9 @@ const translations = {
     'nav.portfolio': 'Portfólio',
     'nav.about': 'Sobre',
     'nav.contact': 'Contato',
+    'nav.privacy': 'Privacidade',
+
+    'legal.label': 'PRIVACIDADE & TERMOS',
 
     'hero.status': 'DISPONÍVEL PARA PROJETOS',
     'hero.location': 'SÃO PAULO, BR · GMT-3',
@@ -72,6 +75,9 @@ const translations = {
     'nav.portfolio': 'Portfolio',
     'nav.about': 'About',
     'nav.contact': 'Contact',
+    'nav.privacy': 'Privacy',
+
+    'legal.label': 'PRIVACY & TERMS',
 
     'hero.status': 'AVAILABLE FOR WORK',
     'hero.location': 'SÃO PAULO, BR · GMT-3',
