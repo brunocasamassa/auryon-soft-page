@@ -5,132 +5,140 @@
 const translations = {
   pt: {
     'loader.text': 'INICIANDO',
-    'nav.product': 'Produto',
-    'nav.portfolio': 'Portfólio',
     'nav.about': 'Sobre',
     'nav.contact': 'Contato',
     'nav.privacy': 'Privacidade',
 
+    'legal.doctitle': 'Política de Privacidade & Termos — Auryon Software',
     'legal.label': 'PRIVACIDADE & TERMOS',
 
-    'hero.status': 'DISPONÍVEL PARA PROJETOS',
+    'hero.status': 'KHRONUS NO GOOGLE PLAY',
     'hero.location': 'SÃO PAULO, BR · GMT-3',
-    'hero.sub': 'Oito anos construindo produtos mobile para Banco Santander, Domino\'s, Carrefour e BRP. Agora enviando o meu — AppBlockerService — uma ferramenta de foco minimalista que te ajuda a recuperar as horas que os apps roubam.',
-    'hero.cta1': 'Conheça o AppBlocker',
-    'hero.cta2': 'Ver portfólio',
+    'hero.t1': 'Software',
+    'hero.t2': 'que respeita',
+    'hero.t3': 'o seu',
+    'hero.t4': 'tempo.',
+    'hero.sub': 'A Auryon Software cria apps Android simples e úteis. Nosso carro-chefe, o Khronus, ajuda você a recuperar o controle do seu tempo de tela.',
+    'hero.cta1': 'Conheça o Khronus',
+    'hero.cta2': 'Baixar no Google Play',
 
     'product.label': 'PRODUTO',
-    'product.tag': 'Uma ferramenta Android de foco que bloqueia apps distrativos por tempo, horário e limite de uso. Feita pra quem quer o dia de volta.',
+    'product.tag': 'Recupere o controle do seu tempo de tela. Defina um limite diário para cada app — quando o tempo acaba, o Khronus bloqueia automaticamente até o dia seguinte.',
+    'product.cta': 'Baixar no Google Play',
 
-    'phone.focus': 'Modo foco · Ativo',
-    'phone.remaining': 'restante',
+    'phone.status': 'Limite diário · Ativo',
+    'phone.remaining': 'restante hoje',
     'phone.blocked': 'BLOQUEADO',
     'phone.allowed': 'LIBERADO',
 
-    'f1.title': 'Bloqueio por agenda',
-    'f1.desc': 'Crie janelas de foco profundo. O AppBlocker garante o cumprimento — sem depender de força de vontade. Bloqueie por dia da semana, hora ou regra customizada.',
-    'f2.title': 'Limites de uso',
-    'f2.desc': 'Defina um orçamento diário por app. Instagram ganha 20 minutos e então é trancado. Seu tempo de tela, suas regras.',
-    'f3.title': 'Sessões de foco',
-    'f3.desc': 'Um toque inicia uma sessão. Os apps selecionados ficam bloqueados até o timer zerar — sem overrides, sem negociação.',
-    'f4.title': '100% local',
-    'f4.desc': 'Sem nuvem, sem tracking, sem ads. Usa o Accessibility Service e a UsageStats API do Android. Seus dados nunca saem do seu telefone.',
+    'f1.title': 'Limite diário por app',
+    'f1.desc': 'Busque qualquer app instalado e defina um limite em minutos para cada um. O contador zera à meia-noite — todo dia é um recomeço.',
+    'f2.title': 'Bloqueio automático',
+    'f2.desc': 'Quando o limite acaba, o app é fechado na hora e uma tela avisa que o tempo acabou. Precisa de mais um tempinho? Ganhe 5 minutos extras assistindo a um anúncio.',
+    'f3.title': 'Funciona em segundo plano',
+    'f3.desc': 'Reinicia sozinho quando o celular é ligado e traz um guia passo a passo de permissões para Xiaomi, Samsung, Huawei, Oppo, Vivo e outras marcas.',
+    'f4.title': 'Permissões transparentes',
+    'f4.desc': 'A Acessibilidade do Android é usada só para detectar qual app está aberto e aplicar os limites que você definiu. Nenhum dado pessoal é coletado ou compartilhado por meio dela.',
 
     'tech.head': 'CONSTRUÍDO COM',
 
-    'portfolio.label': 'PORTFÓLIO',
-
-    'p1.role': 'Solo · Design & Dev · Android / Kotlin',
-    'p2.role': 'Android Engineer · Plataforma de conectividade veicular',
-    'p3.role': 'Android Engineer · Fluxo de pedido & fidelidade',
-    'p4.role': 'Android Engineer · Ferramentas internas de varejo',
-    'p5.role': 'Android Engineer · Apps seguros de identidade',
-    'p6.role': 'Android Engineer · Plataforma bancária',
-    'p7.role': 'Android Engineer · Automação de workflow',
+    'apps.label': 'MAIS APPS',
+    'apps.t1': 'Também',
+    'apps.t2': 'da',
+    'rt.desc': 'Transforma a sua conversa em uma retrospectiva no estilo stories: quem fala mais, quem responde mais rápido, o emoji favorito e muito mais. Tudo acontece no seu celular.',
+    'rt.cat': 'Entretenimento',
 
     'about.label': 'SOBRE',
-    'about.p1': 'Sou Engenheiro Android baseado em São Paulo. Há quase uma década construo produtos mobile usados por milhões — de bancos e varejo a automotivo e delivery.',
-    'about.p2': 'O AppBlockerService é minha versão de uma ferramenta que eu queria que existisse: algo honesto, rápido e respeitoso com sua atenção. Sem assinatura disfarçada de freemium, sem telemetria.',
-    'about.p3': 'Fora do trabalho jogo simuladores, pesquiso eletrônicos obscuros e mantenho uma lista rodando de projetos paralelos que talvez eu publique algum dia.',
-    'about.stack': 'STACK',
-    'about.exp': 'EXPERIÊNCIA',
-    'about.now': 'hoje',
-    'about.now2': 'HOJE',
-    'about.now.l1': 'Publicando o AppBlockerService',
-    'about.now.l2': 'Aberto a novas oportunidades',
-    'about.now.l3': 'Escrevendo mais Kotlin, menos YAML',
+    'about.t1': 'Simples,',
+    'about.t2': 'transparente,',
+    'about.t3': 'sempre evoluindo.',
+    'about.p1': 'A Auryon Software é uma empresa brasileira de software. Criamos apps Android simples, úteis e que respeitam o seu tempo e a sua atenção.',
+    'about.p2': 'Nosso principal produto é o Khronus: você define um limite diário para cada app e, quando o tempo acaba, ele fica bloqueado até o dia seguinte. Um jeito realista de sair do doomscrolling — um limite de cada vez.',
+    'about.p3': 'Também criamos o Retro Talks, que transforma conversas em retrospectivas no estilo stories. Em todos os nossos apps, explicamos com clareza para que serve cada permissão.',
+    'about.apps': 'NOSSOS APPS',
+    'about.apps.k': 'Ferramentas',
+    'about.apps.rt': 'Entretenimento',
+    'about.principles': 'PRINCÍPIOS',
+    'about.pr.l1': 'Simplicidade em primeiro lugar',
+    'about.pr.l2': 'Transparência sobre dados',
+    'about.pr.l3': 'Respeito ao seu tempo',
+    'about.platform': 'PLATAFORMA',
 
     'contact.label': 'CONTATO',
-    'contact.l1': 'Vamos construir',
-    'contact.l2': 'algo',
-    'contact.l3': 'focado.',
+    'contact.l1': 'Fale',
+    'contact.l2': 'com a gente.',
     'contact.email': 'Email',
+    'contact.phone': 'Telefone',
 
     'footer.built': 'Feito com three.js, gsap & café',
   },
 
   en: {
     'loader.text': 'INITIALIZING',
-    'nav.product': 'Product',
-    'nav.portfolio': 'Portfolio',
     'nav.about': 'About',
     'nav.contact': 'Contact',
     'nav.privacy': 'Privacy',
 
+    'legal.doctitle': 'Privacy Policy & Terms — Auryon Software',
     'legal.label': 'PRIVACY & TERMS',
 
-    'hero.status': 'AVAILABLE FOR WORK',
+    'hero.status': 'KHRONUS ON GOOGLE PLAY',
     'hero.location': 'SÃO PAULO, BR · GMT-3',
-    'hero.sub': 'Eight years building mobile products for Banco Santander, Domino\'s, Carrefour and BRP. Now shipping my own — AppBlockerService — a minimal focus tool that helps you reclaim hours from the apps that steal them.',
-    'hero.cta1': 'Meet AppBlocker',
-    'hero.cta2': 'See portfolio',
+    'hero.t1': 'Software',
+    'hero.t2': 'that respects',
+    'hero.t3': 'your',
+    'hero.t4': 'time.',
+    'hero.sub': 'Auryon Software builds simple, useful Android apps. Our flagship, Khronus, helps you take back control of your screen time.',
+    'hero.cta1': 'Meet Khronus',
+    'hero.cta2': 'Get it on Google Play',
 
     'product.label': 'PRODUCT',
-    'product.tag': 'An Android focus tool that blocks distracting apps by time, schedule and usage limits. Built for people who want their day back.',
+    'product.tag': 'Take back control of your screen time. Set a daily limit for each app — when time runs out, Khronus blocks it automatically until the next day.',
+    'product.cta': 'Get it on Google Play',
 
-    'phone.focus': 'Focus mode · Active',
-    'phone.remaining': 'remaining',
+    'phone.status': 'Daily limit · Active',
+    'phone.remaining': 'left today',
     'phone.blocked': 'BLOCKED',
     'phone.allowed': 'ALLOWED',
 
-    'f1.title': 'Schedule-based blocking',
-    'f1.desc': "Create windows of deep work. AppBlocker enforces them — no willpower required. Block by weekday, hour, or custom rule.",
-    'f2.title': 'Usage limits',
-    'f2.desc': "Set a daily budget per app. Instagram gets 20 minutes and then it's locked. Your screen time, your rules.",
-    'f3.title': 'Focus sessions',
-    'f3.desc': "One tap starts a focus session. Selected apps are blocked until the timer ends — no overrides, no bargaining.",
-    'f4.title': '100% on-device',
-    'f4.desc': "No cloud, no tracking, no ads. Uses Android's Accessibility Service and UsageStats APIs. Your data never leaves your phone.",
+    'f1.title': 'Daily limit per app',
+    'f1.desc': 'Search any installed app and set a limit in minutes for each one. The counter resets at midnight — every day is a fresh start.',
+    'f2.title': 'Automatic blocking',
+    'f2.desc': "When the limit is reached, the app closes right away and a screen tells you time's up. Need a little more? Earn 5 extra minutes by watching an ad.",
+    'f3.title': 'Runs in the background',
+    'f3.desc': 'Restarts on its own when your phone boots, with a step-by-step permissions guide for Xiaomi, Samsung, Huawei, Oppo, Vivo and other brands.',
+    'f4.title': 'Transparent permissions',
+    'f4.desc': "Android's Accessibility service is used only to detect which app is open and apply the limits you set. No personal data is collected or shared through it.",
 
     'tech.head': 'BUILT WITH',
 
-    'portfolio.label': 'PORTFOLIO',
-
-    'p1.role': 'Solo · Design & Dev · Android / Kotlin',
-    'p2.role': 'Android Engineer · Vehicle connectivity platform',
-    'p3.role': 'Android Engineer · Ordering flow & loyalty',
-    'p4.role': 'Android Engineer · Retail internal tooling',
-    'p5.role': 'Android Engineer · Secure identity apps',
-    'p6.role': 'Android Engineer · Banking platform',
-    'p7.role': 'Android Engineer · Workflow automation',
+    'apps.label': 'MORE APPS',
+    'apps.t1': 'Also',
+    'apps.t2': 'by',
+    'rt.desc': 'Turns your chat into a stories-style retrospective: who talks the most, who replies fastest, the favorite emoji and much more. Everything happens on your phone.',
+    'rt.cat': 'Entertainment',
 
     'about.label': 'ABOUT',
-    'about.p1': "I'm an Android Engineer based in São Paulo. For almost a decade I've built mobile products used by millions — from banking and retail to automotive and food delivery.",
-    'about.p2': 'AppBlockerService is my own take on a tool I wanted to exist: something honest, fast, and respectful of your attention. No subscriptions disguised as freemium, no telemetry.',
-    'about.p3': "Outside work I play simulation games, research obscure consumer electronics, and keep a running list of side projects I'll probably ship someday.",
-    'about.stack': 'STACK',
-    'about.exp': 'EXPERIENCE',
-    'about.now': 'now',
-    'about.now2': 'NOW',
-    'about.now.l1': 'Shipping AppBlockerService',
-    'about.now.l2': 'Open to new roles',
-    'about.now.l3': 'Writing more Kotlin, less YAML',
+    'about.t1': 'Simple,',
+    'about.t2': 'transparent,',
+    'about.t3': 'always improving.',
+    'about.p1': 'Auryon Software is a Brazilian software company. We build Android apps that are simple, useful and respectful of your time and attention.',
+    'about.p2': 'Our flagship is Khronus: you set a daily limit for each app and, when time runs out, it stays blocked until the next day. A realistic way out of doomscrolling — one limit at a time.',
+    'about.p3': 'We also make Retro Talks, which turns chats into stories-style retrospectives. In all of our apps, we clearly explain what each permission is for.',
+    'about.apps': 'OUR APPS',
+    'about.apps.k': 'Tools',
+    'about.apps.rt': 'Entertainment',
+    'about.principles': 'PRINCIPLES',
+    'about.pr.l1': 'Simplicity first',
+    'about.pr.l2': 'Transparency about data',
+    'about.pr.l3': 'Respect for your time',
+    'about.platform': 'PLATFORM',
 
     'contact.label': 'CONTACT',
-    'contact.l1': "Let's build",
-    'contact.l2': 'something',
-    'contact.l3': 'focused.',
+    'contact.l1': 'Get in',
+    'contact.l2': 'touch.',
     'contact.email': 'Email',
+    'contact.phone': 'Phone',
 
     'footer.built': 'Built with three.js, gsap & coffee',
   }
@@ -153,13 +161,38 @@ function applyLang(lang) {
   }
 }
 
-// initialize: detect browser language, fallback to PT
+// the PT/EN choice is remembered, so it carries over between pages
+// (e.g. home → privacy policy) and visits
+const LANG_STORAGE_KEY = 'auryon-lang';
+
+function readSavedLang() {
+  try {
+    const saved = localStorage.getItem(LANG_STORAGE_KEY);
+    return saved === 'pt' || saved === 'en' ? saved : null;
+  } catch (e) {
+    return null;
+  }
+}
+
+function saveLang(lang) {
+  try {
+    localStorage.setItem(LANG_STORAGE_KEY, lang);
+  } catch (e) {
+    // storage unavailable (private mode, blocked site data): choice lasts for this page only
+  }
+}
+
+// initialize: saved choice, then browser language, fallback to PT
 const initLang = (() => {
-  const stored = (typeof window !== 'undefined' && window.__bcLang) || null;
-  if (stored) return stored;
+  const saved = readSavedLang();
+  if (saved) return saved;
   const nav = (navigator.language || 'pt').toLowerCase();
   return nav.startsWith('en') ? 'en' : 'pt';
 })();
+
+// set right away so language-specific blocks ([data-lang-only]) never
+// flash in the wrong language; texts are applied on DOMContentLoaded
+document.documentElement.setAttribute('data-lang', initLang);
 
 document.addEventListener('DOMContentLoaded', () => {
   applyLang(initLang);
@@ -168,7 +201,9 @@ document.addEventListener('DOMContentLoaded', () => {
   if (toggle) {
     toggle.addEventListener('click', () => {
       const current = document.documentElement.getAttribute('data-lang');
-      applyLang(current === 'pt' ? 'en' : 'pt');
+      const next = current === 'pt' ? 'en' : 'pt';
+      applyLang(next);
+      saveLang(next);
     });
   }
 });

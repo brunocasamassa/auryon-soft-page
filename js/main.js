@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Bruno Casamassa — main.js
+   Auryon Software — main.js
    Loader, custom cursor, GSAP reveals, phone timer, São Paulo clock.
    ========================================================================== */
 

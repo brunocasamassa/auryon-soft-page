@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bruno Casamassa — Android Engineering & AppBlocker</title>
-  <meta name="description" content="Bruno Casamassa — Android Engineer. Creator of AppBlockerService, a focus-first app blocker for Android." />
+  <title>Auryon Software — Khronus</title>
+  <meta name="description" content="Auryon Software cria apps Android simples e úteis. Conheça o Khronus: defina um limite diário para cada app e recupere o controle do seu tempo de tela." />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -40,8 +40,8 @@
       <span class="logo-text">AURYON SOFTWARE DEVELOPMENT</span>
     </a>
     <nav class="nav">
-      <a href="#product" data-cursor="link" data-i18n="nav.product">Product</a>
-      <a href="#portfolio" data-cursor="link" data-i18n="nav.portfolio">Portfolio</a>
+      <a href="#product" data-cursor="link">Khronus</a>
+      <a href="#apps" data-cursor="link">Apps</a>
       <a href="#about" data-cursor="link" data-i18n="nav.about">About</a>
       <a href="#contact" data-cursor="link" data-i18n="nav.contact">Contact</a>
       <a href="privacy.html" data-cursor="link" data-i18n="nav.privacy">Privacy</a>
@@ -60,29 +60,28 @@
     <section class="hero" id="home">
       <div class="hero-grid">
         <div class="hero-meta">
-          <span class="hero-meta-line">● <span data-i18n="hero.status">AVAILABLE FOR WORK</span></span>
+          <span class="hero-meta-line">● <span data-i18n="hero.status">KHRONUS ON GOOGLE PLAY</span></span>
           <span class="hero-meta-line" data-i18n="hero.location">SÃO PAULO, BR · GMT-3</span>
         </div>
 
         <h1 class="hero-title" data-split>
-          <span class="line"><span class="word">Android</span></span>
-          <span class="line"><span class="word hero-italic">Engineer</span></span>
-          <span class="line"><span class="word">&amp;</span> <span class="word">Maker</span></span>
-          <span class="line"><span class="word hero-accent">of</span> <span class="word hero-accent">focus.</span></span>
+          <span class="line"><span class="word" data-i18n="hero.t1">Software</span></span>
+          <span class="line"><span class="word hero-italic" data-i18n="hero.t2">that respects</span></span>
+          <span class="line"><span class="word" data-i18n="hero.t3">your</span></span>
+          <span class="line"><span class="word hero-accent" data-i18n="hero.t4">time.</span></span>
         </h1>
 
         <p class="hero-sub" data-i18n="hero.sub">
-          +Eight years building mobile products for multiple companies. Now shipping my own — AppBlockerService — a
-          minimal focus tool that helps you reclaim hours from the apps
-          that steal them.
+          Auryon Software builds simple, useful Android apps. Our flagship,
+          Khronus, helps you take back control of your screen time.
         </p>
 
         <div class="hero-cta">
           <a href="#product" class="btn btn-primary" data-cursor="link">
-            <span data-i18n="hero.cta1">Meet AppBlocker</span>
+            <span data-i18n="hero.cta1">Meet Khronus</span>
             <svg viewBox="0 0 24 24" width="18" height="18"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
-          <a href="#portfolio" class="btn btn-ghost" data-cursor="link" data-i18n="hero.cta2">See portfolio</a>
+          <a href="https://play.google.com/store/apps/details?id=com.auryonsoftware.appblockerservice" target="_blank" rel="noopener" class="btn btn-ghost" data-cursor="link" data-i18n="hero.cta2">Get it on Google Play</a>
         </div>
 
         <div class="hero-ticker" aria-hidden="true">
@@ -108,7 +107,7 @@
       </div>
     </section>
 
-    <!-- PRODUCT -->
+    <!-- PRODUCT — KHRONUS -->
     <section class="product" id="product">
       <div class="section-head">
         <span class="section-num">01</span>
@@ -117,12 +116,17 @@
 
       <div class="product-intro">
         <h2 class="section-title" data-split>
-          <span class="line"><span class="word">AppBlocker</span><span class="word hero-italic">Service</span></span>
+          <span class="line"><span class="word">Khronus</span></span>
         </h2>
         <p class="product-tag" data-i18n="product.tag">
-          An Android focus tool that blocks distracting apps by time, schedule
-          and usage limits. Built for people who want their day back.
+          Take back control of your screen time. Set a daily limit for each
+          app — when time runs out, Khronus blocks it automatically until the
+          next day.
         </p>
+        <a href="https://play.google.com/store/apps/details?id=com.auryonsoftware.appblockerservice" target="_blank" rel="noopener" class="btn btn-primary product-cta" data-cursor="link">
+          <span data-i18n="product.cta">Get it on Google Play</span>
+          <svg viewBox="0 0 24 24" width="18" height="18"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
       </div>
 
       <!-- Phone mockup + features -->
@@ -137,8 +141,8 @@
               </div>
               <div class="phone-content">
                 <div class="phone-header">
-                  <div class="phone-title">AppBlocker</div>
-                  <div class="phone-sub" data-i18n="phone.focus">Focus mode · Active</div>
+                  <div class="phone-title">Khronus</div>
+                  <div class="phone-sub" data-i18n="phone.status">Daily limit · Active</div>
                 </div>
 
                 <div class="phone-timer">
@@ -148,7 +152,7 @@
                   </svg>
                   <div class="timer-text">
                     <div class="timer-num" id="timer-num">47:32</div>
-                    <div class="timer-label" data-i18n="phone.remaining">remaining</div>
+                    <div class="timer-label" data-i18n="phone.remaining">left today</div>
                   </div>
                 </div>
 
@@ -167,37 +171,40 @@
         <div class="features">
           <article class="feature" data-reveal>
             <div class="feature-num">F/01</div>
-            <h3 class="feature-title" data-i18n="f1.title">Schedule-based blocking</h3>
+            <h3 class="feature-title" data-i18n="f1.title">Daily limit per app</h3>
             <p class="feature-desc" data-i18n="f1.desc">
-              Create windows of deep work. AppBlocker enforces them — no
-              willpower required. Block by weekday, hour, or custom rule.
+              Search any installed app and set a limit in minutes for each
+              one. The counter resets at midnight — every day is a fresh start.
             </p>
           </article>
 
           <article class="feature" data-reveal>
             <div class="feature-num">F/02</div>
-            <h3 class="feature-title" data-i18n="f2.title">Usage limits</h3>
+            <h3 class="feature-title" data-i18n="f2.title">Automatic blocking</h3>
             <p class="feature-desc" data-i18n="f2.desc">
-              Set a daily budget per app. Instagram gets 20 minutes and then
-              it's locked. Your screen time, your rules.
+              When the limit is reached, the app closes right away and a screen
+              tells you time's up. Need a little more? Earn 5 extra minutes by
+              watching an ad.
             </p>
           </article>
 
           <article class="feature" data-reveal>
             <div class="feature-num">F/03</div>
-            <h3 class="feature-title" data-i18n="f3.title">Focus sessions</h3>
+            <h3 class="feature-title" data-i18n="f3.title">Runs in the background</h3>
             <p class="feature-desc" data-i18n="f3.desc">
-              One tap starts a focus session. Selected apps are blocked until
-              the timer ends — no overrides, no bargaining.
+              Restarts on its own when your phone boots, with a step-by-step
+              permissions guide for Xiaomi, Samsung, Huawei, Oppo, Vivo and
+              other brands.
             </p>
           </article>
 
           <article class="feature" data-reveal>
             <div class="feature-num">F/04</div>
-            <h3 class="feature-title" data-i18n="f4.title">100% on-device</h3>
+            <h3 class="feature-title" data-i18n="f4.title">Transparent permissions</h3>
             <p class="feature-desc" data-i18n="f4.desc">
-              No cloud, no tracking, no ads. Uses Android's Accessibility
-              Service and UsageStats APIs. Your data never leaves your phone.
+              Android's Accessibility service is used only to detect which app
+              is open and apply the limits you set. No personal data is
+              collected or shared through it.
             </p>
           </article>
         </div>
@@ -219,28 +226,32 @@
       </div>
     </section>
 
-    <!-- PORTFOLIO -->
-    <section class="portfolio" id="portfolio">
+    <!-- MORE APPS -->
+    <section class="apps" id="apps">
       <div class="section-head">
         <span class="section-num">02</span>
-        <span class="section-label" data-i18n="portfolio.label">PORTFOLIO</span>
+        <span class="section-label" data-i18n="apps.label">MORE APPS</span>
       </div>
 
-      <h2 class="section-title portfolio-title" data-split>
-        <span class="line"><span class="word">Selected</span> <span class="word hero-italic">work</span></span>
+      <h2 class="section-title apps-title" data-split>
+        <span class="line"><span class="word" data-i18n="apps.t1">Also</span> <span class="word hero-italic" data-i18n="apps.t2">by</span> <span class="word">Auryon</span></span>
       </h2>
 
-      <div class="projects">
-        <a class="project" href="#" data-cursor="link" data-reveal>
-          <div class="project-index">01</div>
-          <div class="project-main">
-            <h3 class="project-name">AppBlockerService</h3>
-            <p class="project-role" data-i18n="p1.role">Solo · Design &amp; Dev · Android / Kotlin</p>
+      <div class="app-list">
+        <a class="app-row" href="https://play.google.com/store/apps/details?id=com.auryonsoftware.retrotalks" target="_blank" rel="noopener" data-cursor="link" data-reveal>
+          <div class="app-index">01</div>
+          <div class="app-main">
+            <h3 class="app-name">Retro Talks</h3>
+            <p class="app-desc" data-i18n="rt.desc">
+              Turns your chat into a stories-style retrospective: who talks the
+              most, who replies fastest, the favorite emoji and much more.
+              Everything happens on your phone.
+            </p>
           </div>
-          <div class="project-year">2025</div>
-          <div class="project-arrow">→</div>
+          <div class="app-cat" data-i18n="rt.cat">Entertainment</div>
+          <div class="app-arrow">↗</div>
         </a>
-
+      </div>
     </section>
 
     <!-- ABOUT -->
@@ -253,59 +264,49 @@
       <div class="about-grid">
         <div class="about-text">
           <h2 class="section-title" data-split>
-            <span class="line"><span class="word">Curious,</span></span>
-            <span class="line"><span class="word hero-italic">persistent,</span></span>
-            <span class="line"><span class="word">always shipping.</span></span>
+            <span class="line"><span class="word" data-i18n="about.t1">Simple,</span></span>
+            <span class="line"><span class="word hero-italic" data-i18n="about.t2">transparent,</span></span>
+            <span class="line"><span class="word" data-i18n="about.t3">always improving.</span></span>
           </h2>
           <p data-i18n="about.p1">
-            I'm an Android Engineer based in São Paulo. For almost a decade
-            I've built mobile products used by millions — from banking and
-            retail to automotive and food delivery.
+            Auryon Software is a Brazilian software company. We build Android
+            apps that are simple, useful and respectful of your time and
+            attention.
           </p>
           <p data-i18n="about.p2">
-            AppBlockerService is my own take on a tool I wanted to exist:
-            something honest, fast, and respectful of your attention. No
-            subscriptions disguised as freemium, no telemetry.
+            Our flagship is Khronus: you set a daily limit for each app and,
+            when time runs out, it stays blocked until the next day. A realistic
+            way out of doomscrolling — one limit at a time.
           </p>
           <p data-i18n="about.p3">
-            Outside work I play simulation games, research obscure consumer
-            electronics, and keep a running list of side projects I'll
-            probably ship someday.
+            We also make Retro Talks, which turns chats into stories-style
+            retrospectives. In all of our apps, we clearly explain what each
+            permission is for.
           </p>
         </div>
 
         <aside class="about-side">
           <div class="about-block">
-            <div class="about-block-head" data-i18n="about.stack">STACK</div>
+            <div class="about-block-head" data-i18n="about.apps">OUR APPS</div>
             <ul>
-              <li>Kotlin · Java</li>
-              <li>Jetpack Compose</li>
-              <li>Coroutines · Flow</li>
-              <li>Hilt / Dagger</li>
-              <li>Room · Retrofit</li>
-              <li>MVVM · Clean Arch.</li>
-              <li>Android SDK / NDK</li>
+              <li><a href="https://play.google.com/store/apps/details?id=com.auryonsoftware.appblockerservice" target="_blank" rel="noopener" data-cursor="link">Khronus</a> <span data-i18n="about.apps.k">Tools</span></li>
+              <li><a href="https://play.google.com/store/apps/details?id=com.auryonsoftware.retrotalks" target="_blank" rel="noopener" data-cursor="link">Retro Talks</a> <span data-i18n="about.apps.rt">Entertainment</span></li>
             </ul>
           </div>
 
           <div class="about-block">
-            <div class="about-block-head" data-i18n="about.exp">EXPERIENCE</div>
+            <div class="about-block-head" data-i18n="about.principles">PRINCIPLES</div>
             <ul>
-              <li>BRP <span>2023 — <span data-i18n="about.now">now</span></span></li>
-              <li>Domino's US <span>2022</span></li>
-              <li>Carrefour <span>2021</span></li>
-              <li>Valid <span>2020</span></li>
-              <li>Santander <span>2019</span></li>
-              <li>Opt2flow <span>2018</span></li>
+              <li data-i18n="about.pr.l1">Simplicity first</li>
+              <li data-i18n="about.pr.l2">Transparency about data</li>
+              <li data-i18n="about.pr.l3">Respect for your time</li>
             </ul>
           </div>
 
           <div class="about-block">
-            <div class="about-block-head" data-i18n="about.now2">NOW</div>
+            <div class="about-block-head" data-i18n="about.platform">PLATFORM</div>
             <ul>
-              <li data-i18n="about.now.l1">Shipping AppBlockerService</li>
-              <li data-i18n="about.now.l2">Open to new roles</li>
-              <li data-i18n="about.now.l3">Writing more Kotlin, less YAML</li>
+              <li>Android <span>Google Play</span></li>
             </ul>
           </div>
         </aside>
@@ -320,37 +321,25 @@
       </div>
 
       <h2 class="contact-title" data-split>
-        <span class="line"><span class="word" data-i18n="contact.l1">Let's build</span></span>
-        <span class="line"><span class="word hero-italic" data-i18n="contact.l2">something</span> <span class="word" data-i18n="contact.l3">focused.</span></span>
+        <span class="line"><span class="word" data-i18n="contact.l1">Get in</span></span>
+        <span class="line"><span class="word hero-italic" data-i18n="contact.l2">touch.</span></span>
       </h2>
 
       <div class="contact-grid">
-        <a href="mailto:contact@auryonsoft.com.br" class="contact-link" data-cursor="link">
+        <a href="mailto:contato@auryonsoft.com.br" class="contact-link" data-cursor="link">
           <span class="contact-key" data-i18n="contact.email">Email</span>
           <span class="contact-val">contato@auryonsoft.com.br</span>
         </a>
-          <a href="mailto:brunocasamassa@hotmail.com" class="contact-link" data-cursor="link">
-          <span class="contact-key" data-i18n="contact.personalMail">Personal mail(for hiring purposes)</span>
-          <span class="contact-val">brunocasamassa@hotmail.com</span>
-        </a>
-        <a href="https://www.linkedin.com/in/bruno-casamassa-bb109010a/" target="_blank" rel="noopener" class="contact-link" data-cursor="link">
-          <span class="contact-key" data-i18n="contact.linkedin">LinkedIn</span>
-          <span class="contact-val">/in/bruno-casamassa</span>
-        </a>
-        <a href="https://github.com/brunocasamassa" target="_blank" rel="noopener" class="contact-link" data-cursor="link">
-          <span class="contact-key">GitHub</span>
-          <span class="contact-val">@brunocasamassa</span>
-        </a>
-        <a href="https://twitter.com/4ury0n" target="_blank" rel="noopener" class="contact-link" data-cursor="link">
-          <span class="contact-key">X / Twitter</span>
-          <span class="contact-val">@4ury0n</span>
+        <a href="tel:+5511994896047" class="contact-link" data-cursor="link">
+          <span class="contact-key" data-i18n="contact.phone">Phone</span>
+          <span class="contact-val">+55 11 99489-6047</span>
         </a>
       </div>
     </section>
 
     <footer class="footer">
       <div class="footer-row">
-        <span>© 2026 Bruno Casamassa</span>
+        <span>© 2027 Auryon Software</span>
         <span class="footer-time" id="footer-time">SP · 00:00</span>
         <span data-i18n="footer.built">Built with three.js, gsap &amp; coffee</span>
       </div>

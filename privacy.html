@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Política de Privacidade & Termos — Auryon Software</title>
+  <title data-i18n="legal.doctitle">Política de Privacidade & Termos — Auryon Software</title>
   <meta name="description" content="Política de privacidade e termos de uso do Auryon Software." />
 
   <!-- Fonts -->
@@ -13,6 +13,9 @@
 
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90' fill='%2300ff9d'%3E▲%3C/text%3E%3C/svg%3E" />
+
+  <!-- i18n loads early so the policy renders in the right language from the first paint -->
+  <script src="js/i18n.js"></script>
 </head>
 <body>
   <!-- Noise overlay -->
@@ -29,8 +32,8 @@
       <span class="logo-text">AURYON SOFTWARE DEVELOPMENT</span>
     </a>
     <nav class="nav">
-      <a href="index.html#product" data-cursor="link" data-i18n="nav.product">Product</a>
-      <a href="index.html#portfolio" data-cursor="link" data-i18n="nav.portfolio">Portfolio</a>
+      <a href="index.html#product" data-cursor="link">Khronus</a>
+      <a href="index.html#apps" data-cursor="link">Apps</a>
       <a href="index.html#about" data-cursor="link" data-i18n="nav.about">About</a>
       <a href="index.html#contact" data-cursor="link" data-i18n="nav.contact">Contact</a>
       <a href="privacy.html" data-cursor="link" data-i18n="nav.privacy">Privacy</a>
@@ -51,12 +54,13 @@
         <span class="section-label" data-i18n="legal.label">PRIVACIDADE &amp; TERMOS</span>
       </div>
 
-      <h1 class="section-title legal-title">
+      <!-- Portuguese and English versions: only the active language is shown -->
+      <h1 class="section-title legal-title" data-lang-only="pt">
         <span class="line"><span class="word">Política</span> <span class="word hero-italic">de</span></span>
         <span class="line"><span class="word hero-accent">Privacidade</span></span>
       </h1>
 
-      <div class="legal-body">
+      <div class="legal-body" data-lang-only="pt">
         <p>A sua privacidade é importante para nós. É política do Auryon Software respeitar a sua privacidade em relação a qualquer informação sua que possamos coletar no site Auryon Software, em nossos aplicativos e em outros sites que possuímos e operamos.</p>
 
         <p>Solicitamos informações pessoais apenas quando realmente precisamos delas para lhe fornecer um serviço. Fazemo-lo por meios justos e legais, com o seu conhecimento e, quando necessário, com o seu consentimento. Também informamos por que estamos coletando e como será usado.</p>
@@ -71,9 +75,9 @@
 
         <p>O uso continuado de nosso site será considerado como aceitação de nossas práticas em torno de privacidade e informações pessoais. Se você tiver alguma dúvida sobre como lidamos com dados do usuário e informações pessoais, entre em contato conosco pelo e-mail <a href="mailto:contato@auryonsoft.com.br" data-cursor="link">contato@auryonsoft.com.br</a>.</p>
 
-        <h2 class="legal-subtitle"><span class="hero-italic">App</span> Blocker Service</h2>
+        <h2 class="legal-subtitle"><span class="hero-italic">Aplicativo</span> Khronus</h2>
 
-        <p>Esta seção se aplica ao aplicativo App Blocker Service para Android e explica quais dados ele usa, para que servem e com quem são compartilhados.</p>
+        <p>Esta seção se aplica ao aplicativo Khronus para Android e explica quais dados ele usa, para que servem e com quem são compartilhados.</p>
 
         <p><strong>Uso da Acessibilidade.</strong> Com a sua permissão, o aplicativo usa o serviço de Acessibilidade do Android para identificar qual aplicativo está aberto na tela, contar o tempo de uso e aplicar o limite diário que você definiu. Nos navegadores, ele lê o endereço (URL) exibido na barra de endereços apenas para comparar com a sua lista de sites bloqueados.</p>
 
@@ -108,7 +112,7 @@
         <p>O usuário se compromete a fazer uso adequado dos conteúdos e da informação que o Auryon Software oferece no site e com caráter enunciativo, mas não limitativo:</p>
 
         <ul class="legal-list">
-          <li><span class="legal-list-mark">A</span>Não se envolver em atividades que sejam ilegais ou contrárias à boa fé a à ordem pública;</li>
+          <li><span class="legal-list-mark">A</span>Não se envolver em atividades que sejam ilegais ou contrárias à boa fé e à ordem pública;</li>
           <li><span class="legal-list-mark">B</span>Não difundir propaganda ou conteúdo de natureza racista, xenofóbica, jogos de sorte ou azar, qualquer tipo de pornografia ilegal, de apologia ao terrorismo ou contra os direitos humanos;</li>
           <li><span class="legal-list-mark">C</span>Não causar danos aos sistemas físicos (hardwares) e lógicos (softwares) do Auryon Software, de seus fornecedores ou terceiros, para introduzir ou disseminar vírus informáticos ou quaisquer outros sistemas de hardware ou software que sejam capazes de causar danos anteriormente mencionados.</li>
         </ul>
@@ -119,11 +123,80 @@
 
         <p class="legal-effective">Esta política é efetiva a partir de <span class="hero-accent">31 de outubro de 2026</span></p>
       </div>
+
+      <h1 class="section-title legal-title" data-lang-only="en" lang="en">
+        <span class="line"><span class="word">Privacy</span></span>
+        <span class="line"><span class="word hero-accent">Policy</span></span>
+      </h1>
+
+      <div class="legal-body" data-lang-only="en" lang="en">
+        <p>Your privacy is important to us. It is Auryon Software's policy to respect your privacy regarding any information we may collect from you on the Auryon Software website, in our apps and on other sites we own and operate.</p>
+
+        <p>We only ask for personal information when we truly need it to provide you with a service. We do so by fair and lawful means, with your knowledge and, where necessary, with your consent. We also tell you why we are collecting it and how it will be used.</p>
+
+        <p>We only retain collected information for as long as necessary to provide the requested service. When we store data, we protect it using commercially acceptable means to prevent loss and theft, as well as unauthorized access, disclosure, copying, use or modification.</p>
+
+        <p>We do not sell personal information. We share data only with the service providers described in this policy, for the purposes stated here, or when required by law.</p>
+
+        <p>Our website may link to external sites that are not operated by us. Please be aware that we have no control over the content and practices of these sites and cannot accept responsibility for their respective privacy policies.</p>
+
+        <p>You are free to refuse our request for personal information, with the understanding that we may be unable to provide some of the services you want.</p>
+
+        <p>Your continued use of our website will be regarded as acceptance of our practices around privacy and personal information. If you have any questions about how we handle user data and personal information, contact us at <a href="mailto:contato@auryonsoft.com.br" data-cursor="link">contato@auryonsoft.com.br</a>.</p>
+
+        <h2 class="legal-subtitle"><span class="hero-italic">The</span> Khronus app</h2>
+
+        <p>This section applies to the Khronus app for Android and explains what data it uses, what the data is used for and who it is shared with.</p>
+
+        <p><strong>Use of the Accessibility service.</strong> With your permission, the app uses the Android Accessibility service to identify which app is open on the screen, track usage time and apply the daily limit you set. In browsers, it reads the address (URL) shown in the address bar only to compare it against your list of blocked sites.</p>
+
+        <p>This information is used only on your device. It is not sent to servers, shared with third parties or used for ads. The app does not read passwords, messages or page content.</p>
+
+        <p><strong>Data stored on the device.</strong> The list of blocked apps and sites, the daily limits and usage time are stored locally on your device.</p>
+
+        <p><strong>Data collected and shared.</strong> The app sends the data below to the providers indicated:</p>
+
+        <ul class="legal-list">
+          <li><span class="legal-list-mark">A</span>Account: name, email address and purchase status, to create and maintain your account. Provider: Google Firebase. If you sign in with Google, sign-in is handled by Google. Passwords are managed by Firebase Authentication.</li>
+          <li><span class="legal-list-mark">B</span>Diagnostics and analytics: crash logs, device manufacturer, model and operating system version, app version and usage information from the settings screens, to fix bugs and improve the app. Provider: Google Firebase (Crashlytics, Analytics and Remote Config).</li>
+          <li><span class="legal-list-mark">C</span>Ads: advertising ID, device and app information and ad interactions, to show and measure ads. Provider: Google AdMob.</li>
+          <li><span class="legal-list-mark">D</span>Campaign measurement: advertising ID, an anonymous identifier, device and app information and app install and open events, to measure the results of our marketing campaigns. Provider: Meta (Meta App Events). Screen titles and app content are not sent. This measurement is not enabled for users in the European Economic Area and the United Kingdom.</li>
+        </ul>
+
+        <p>These providers also process data under their own policies: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" data-cursor="link">Google Privacy Policy</a> and <a href="https://www.facebook.com/privacy/policy" target="_blank" rel="noopener" data-cursor="link">Meta Privacy Policy</a>. Data sent by these services is encrypted in transit.</p>
+
+        <p><strong>Your choices and rights.</strong> You can:</p>
+
+        <ul class="legal-list">
+          <li><span class="legal-list-mark">A</span>Revoke the Accessibility permission at any time in Android settings. Without it, blocking stops working;</li>
+          <li><span class="legal-list-mark">B</span>Reset or delete the advertising ID in Android's privacy settings;</li>
+          <li><span class="legal-list-mark">C</span>Change your ad consent under Settings in the app itself, when this option is shown in your region;</li>
+          <li><span class="legal-list-mark">D</span>Request access to, correction or deletion of your personal data under Brazil's General Data Protection Law (LGPD).</li>
+        </ul>
+
+        <p><strong>Account and data deletion.</strong> To delete your account and the data associated with it, send a request to <a href="mailto:contato@auryonsoft.com.br" data-cursor="link">contato@auryonsoft.com.br</a> from the email address registered to your account, with the subject “Account deletion”. We keep account data for as long as the account exists. Uninstalling the app deletes the data stored on the device.</p>
+
+        <h2 class="legal-subtitle"><span class="hero-italic">User</span> commitment</h2>
+
+        <p>The user agrees to make appropriate use of the content and information that Auryon Software offers on the website, including, but not limited to:</p>
+
+        <ul class="legal-list">
+          <li><span class="legal-list-mark">A</span>Not engaging in activities that are illegal or contrary to good faith and public order;</li>
+          <li><span class="legal-list-mark">B</span>Not spreading advertising or content that is racist or xenophobic, involves gambling, contains any kind of illegal pornography, advocates terrorism or is against human rights;</li>
+          <li><span class="legal-list-mark">C</span>Not causing damage to the physical (hardware) and logical (software) systems of Auryon Software, its suppliers or third parties, nor introducing or spreading computer viruses or any other hardware or software systems capable of causing the damage mentioned above.</li>
+        </ul>
+
+        <h2 class="legal-subtitle"><span class="hero-italic">More</span> information</h2>
+
+        <p>We hope this has made things clear and, as mentioned earlier, if there is something you are not sure whether you need or not, it is usually safer to leave cookies enabled in case it interacts with one of the features you use on our site.</p>
+
+        <p class="legal-effective">This policy is effective as of <span class="hero-accent">October 31, 2026</span></p>
+      </div>
     </section>
 
     <footer class="footer">
       <div class="footer-row">
-        <span>© 2026 Bruno Casamassa</span>
+        <span>© 2027 Auryon Software</span>
         <span class="footer-time" id="footer-time">SP · 00:00</span>
         <span data-i18n="footer.built">Built with three.js, gsap &amp; coffee</span>
       </div>
@@ -131,7 +204,6 @@
   </main>
 
   <!-- App -->
-  <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
